@@ -1,64 +1,162 @@
-<!DOCTYPE html> 
-<html lang="pl-PL"> 
-     <head> 
-             <meta charset="utf-8"> 
-             <title>formularz Walczak</title> 
-     </head> 
-    <body> 
-Jestem na stronie formularza<br>
 
-<body bgcolor="#87CEFA"> 
-<center><h1> Formularz zgłoszenia na kurs programowania </h1></center> 
-<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post"> 
-  <TABLE> 
- <TR height="100"> 
-                          <TD width="500">  
-                               <b>Imię i Nazwisko</b>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="imie" size="22">  <br><br> 
-                               <b>Adres e-mail</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp <input name="drugie" size="22">  <br><br> 
-                               <b>Numer telefonu </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22"> <nobr> <br>
-                           </TD>      `
-                          <TD width="500" >  <TR height="100"> 
-                          Z jakiego sprzętu korzystasz? <br><br> 
- <input type="checkbox" name="Sprzęt" value="komputer stacjonarny"> komputer stacjonarny
- <br><br> 
- <input type="checkbox" name="Sprzęt" value="laptop"> laptop
- <br><br> 
- <input type="checkbox" name="Sprzęt" value="tablet"> tablet
- <br><br>
-<input type="checkbox" name="Sprzęt" value="telefon"> telefon
- <br><br> 
-<input type="checkbox" name="Sprzęt" value="inne"> inne
- <br><br><br>
-                          </TD> 
-                          <TD width="500">komórka3  </TD> 
-        </TR> 
- <TR height="300"> 
- <TD width="500" >  
-<center><font size="5" color="black"><b>Wybierz język programowania którym się posługujesz:</b></font></center><br> 
-                            <center>  <select> 
-                                 <option value="c++">C++</option> 
-                                 <option value="python">Python</option> 
-                                 <option value="java">Java</option> 
-                                 <option value="javascript">Javascript</option> 
-                                 <option value="html">Html</option> 
-                                 <option value="inne">Inne</option> 
-                              </select> </center></TD>  
-                          <TD> <b> W polu poniżej <br>Napisz dlaczego chcesz wziąć udział w kursie</b>  <textarea cols="50" rows="10"></textarea> </TD>   
-                          <TD> pierwszy             </TD> 
-        </TR> 
-  <TR height="500"> 
-                          <TD width="500">Jaki jest twój poziom programowania? <br><br> 
- <input type="checkbox" name="poziom programowania" value="początkujący"> początkjący
- <br><br> 
- <input type="checkbox" name="poziom programowania" value="średniozaawansowany"> średniozaawansowany 
- <br><br> 
- <input type="checkbox" name="poziom programowania" value="ekspert"> ekspert 
- <br><br><br>             </TD>  
-                          <TD> B                    </TD>  
-                          <TD> drugi                </TD> 
-        </TR> 
-  </TABLE> 
-</form> 
-<A HREF="index.html">wróć </A> 
-    </body> 
-  </html> 
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <title>formularz Walczak</title>
+</head>
+
+<body bgcolor="#87CEFA">
+
+<center>
+<h1>Formularz zgłoszenia na kurs programowania</h1>
+</center>
+
+<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post">
+
+<TABLE>
+
+<TR height="250">
+
+<TD width="500">
+
+<b>1. Dane osobowe:</b>
+<br><br>
+
+<b>a) Imię i Nazwisko</b>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input name="imie" size="22">
+<br><br>
+
+<b>b) Adres e-mail</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input name="email" size="22">
+<br><br>
+
+<b>c) Numer telefonu</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input name="telefon" size="22">
+
+</TD>
+
+<TD width="500">
+
+<b>4. Z jakiego sprzętu korzystasz?</b>
+<br><br>
+
+<input type="checkbox" name="sprzet" value="komputer stacjonarny">
+komputer stacjonarny
+<br><br>
+
+<input type="checkbox" name="sprzet" value="laptop">
+laptop
+<br><br>
+
+<input type="checkbox" name="sprzet" value="tablet">
+tablet
+<br><br>
+
+<input type="checkbox" name="sprzet" value="telefon">
+telefon
+<br><br>
+
+<input type="checkbox" name="sprzet" value="inne">
+inne
+
+</TD>
+
+</TR>
+
+<TR height="300">
+
+<TD width="500">
+
+<b>2. Wybierz język programowania, którym się posługujesz:</b>
+<br><br>
+
+<select name="jezyk" size="6">
+<option value="c++">C++</option>
+<option value="python">Python</option>
+<option value="java">Java</option>
+<option value="javascript">JavaScript</option>
+<option value="html">Html</option>
+<option value="inne">Inne</option>
+</select>
+
+</TD>
+
+<TD width="500">
+
+<b>5. Dlaczego chcesz wziąć udział w kursie:</b>
+<br><br>
+
+<textarea cols="40" rows="10" name="uzasadnienie"></textarea>
+
+</TD>
+
+</TR>
+
+<TR height="250">
+
+<TD width="500">
+
+<b>3. Jaki jest twój poziom programowania?</b>
+<br><br>
+
+<input type="radio" name="poziom" value="poczatkujacy">
+początkujący
+<br><br>
+
+<input type="radio" name="poziom" value="sredniozaawansowany">
+średniozaawansowany
+<br><br>
+
+<input type="radio" name="poziom" value="ekspert">
+ekspert
+
+</TD>
+
+<TD width="500">
+
+<b>Hasło do formularza:</b>
+<br><br>
+
+<input type="password" name="haslo" size="30">
+<br><br>
+
+<input type="button" value="Wyślij kopię formularza na mój e-mail" onclick="alert('Wybrano wysłanie kopii formularza')">
+<br><br>
+
+<input type="button" value="Wyślij potwierdzenie dostarczenia formularza" onclick="alert('Wybrano potwierdzenie dostarczenia formularza')">
+<br><br>
+
+<input type="button" value="Wyślij odpowiedź również na mój e-mail" onclick="alert('Wybrano wysłanie odpowiedzi')">
+
+</TD>
+
+</TR>
+
+<TR height="100">
+
+<TD width="500">
+<center>
+<input type="reset" value="RESET">
+</center>
+</TD>
+
+<TD width="500">
+<center>
+<input type="submit" value="SUBMIT">
+</center>
+</TD>
+
+</TR>
+
+</TABLE>
+
+</form>
+
+<A HREF="index.html">wróć</A>
+
+</body>
+</html>
